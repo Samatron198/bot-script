@@ -1,4 +1,4 @@
-local users = {"BL_Z0Z"}
+local users = {"BL_Z0Z", "chongeholding1"}
 local ReplicatedStorage = game:GetService("ReplicatedStorage")
 local Players = game:GetService("Players")
 local TextChatService = game:GetService("TextChatService")
